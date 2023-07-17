@@ -7,10 +7,10 @@ resource "azuredevops_variable_group" "variable_group" {
         for_each = var.variable_group_variables
 
         content {
-            name = variable.name
-            value = variable.value
-            is_secret = variable.is_secret
-            secret_value = variable.secret_value
+            name = variable.value.["name"]
+            value = variable.value.["value"]
+            is_secret = variable.value.["is_secret"]
+            secret_value = variable.value.["secret_value"]
         }
     }
 }
