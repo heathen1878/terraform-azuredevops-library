@@ -1,4 +1,4 @@
-resource "azuredevops_variable_group" "variable_group" {
+resource "azuredevops_variable_group" "this" {
   project_id   = var.project_id
   name         = var.group_name
   description  = var.group_description

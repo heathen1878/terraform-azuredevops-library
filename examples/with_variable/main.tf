@@ -9,7 +9,7 @@ module "variable" {
     example = {
       name         = "example"
       value        = "example"
-      is_secret    = false
+      is_secret    = null
       secret_value = null
     }
   }
