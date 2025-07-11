@@ -1,7 +1,14 @@
 resource "azuredevops_variable_group" "variable_group" {
+<<<<<<< Updated upstream
   project_id  = var.project_id
   name        = var.variable_group_name
   description = var.variable_group_description
+=======
+  project_id   = var.project_id
+  name         = var.variable_group_name
+  description  = var.variable_group_description
+  allow_access = var.allow_access
+>>>>>>> Stashed changes
 
   dynamic "variable" {
     for_each = var.variable_group_variables
